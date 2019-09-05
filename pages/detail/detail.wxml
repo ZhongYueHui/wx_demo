@@ -1,0 +1,24 @@
+<!-- pages/detail/detail.wxml -->
+<view>
+  <image class="headeImage" src="{{musicPlay?'/images/music/Sunset.jpg':dataObject.detail_img}}" />
+  <image class="musicImage" catch:tap="handlePlayMusic" src="{{musicPlay?'/images/music/music-stop.png':'/images/music/music-start.png'}}" />
+  <view class="infoContainer">
+    <image class="headeAvatar" src="{{dataObject.avatar}}" />
+    <text>{{dataObject.author}}</text>
+    <text>发布于</text>
+    <text>{{dataObject.date}}</text>
+  </view>
+  <text class="textTitle">{{dataObject.title}}</text>
+  <view>
+    <view class="shareAndColl">
+      <view class="line"></view>
+      <image src="../../images/icon/share.png" catch:tap="handleShare" />
+      <image wx:if="{{!isShow}}" src="../../images/icon/collection-anti.png" catch:tap="collection" />
+      <image wx:if="{{isShow}}" src="../../images/icon/collection.png" catch:tap="collection" />
+    </view>
+    <view class="container">
+      <button class="button" type="primary" open-type="share">转发此文章</button>
+      <view class="textInfo">{{dataObject.detail_content}}</view>
+    </view>
+  </view>
+</view>

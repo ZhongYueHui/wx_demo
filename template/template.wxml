@@ -1,0 +1,17 @@
+<template name="newInfo">
+  <view>
+    <view class="headeTitl">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>
+    <text class="textTitl">{{title}}</text>
+    <image src="{{detail_img}}" class="infoImage" />
+    <view class="textInfo">{{detail_content}}</view>
+    <view class="footImage">
+      <image src="{{detail_love_image1}}" />
+      <text>{{love_count}}</text>
+      <image src="{{detail_love_image2}}" />
+      <text>{{attention_count}}</text>
+    </view>
+  </view>
+</template>

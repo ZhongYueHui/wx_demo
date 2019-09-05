@@ -1,0 +1,18 @@
+<!-- pages/movieDetails/movieDetails.wxml -->
+<view class="container">
+  <image src="{{movieList.images.large}}" class="image" />
+  <view class="detailInfo">
+    <text class="title">{{movieList.title}}</text>
+    <view class="type">
+      类型：
+      <text wx:for="{{movieList.genres}}">  {{item}}  </text>
+    </view>
+    <text class="rating">评分:{{movieList.rating.average}}</text>
+    <text class="authore">导演：{{movieList.directors[0].name}}</text>
+    <view>
+      演员：
+      <text class="pepole" wx:for="{{movieList.casts}}">{{item.name}}  </text>
+    </view>
+    <button class="button" type="primary" catchtap="toMovie">我要观影</button>
+  </view>
+</view>

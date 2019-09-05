@@ -1,0 +1,39 @@
+.headeTitl {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.headeTitl image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.textTitl {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+
+.infoImage {
+  width: 100%;
+}
+
+.textInfo {
+  font-size: 30rpx;
+  color: #A6A3A3;
+  text-indent: 32rpx;
+}
+
+.footImage {
+  display: flex;
+  font-size: 32rpx;
+}
+
+.footImage image {
+  width: 40rpx;
+  height: 40rpx;
+  align-items: center;
+}

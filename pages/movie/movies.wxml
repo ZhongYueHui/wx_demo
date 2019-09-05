@@ -1,0 +1,12 @@
+<!-- pages/movie/movies.wxml -->
+<view>
+  <navigator url="/pages/movieDetails/movieDetails?index={{index}}" class="container" wx:for="{{movieList}}" wx:key="index">
+    <image src="{{movieList[index].images.large}}" class="image" />
+    <view class="info">
+      <view class="title">{{movieList[index].title}}</view>
+      <text class="score">{{movieList[index].rating.average}}</text>
+      <view class="year">年份:{{movieList[index].year}}</view>
+      <view class="author">导演:{{movieList[index].directors[0].name}}</view>
+    </view>
+  </navigator>
+</view>
